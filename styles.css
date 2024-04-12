@@ -1,0 +1,13 @@
+body{
+   background-color: #ADD8E6;
+}
+h1{
+   text-align: center;
+}
+div{
+   border:2px solid black;
+}
+ul li {
+   color: green;
+   font-size: 18px;
+}
