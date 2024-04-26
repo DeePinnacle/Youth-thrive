@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youth-trive assignment</title>
+    <link rel="stylesheet" href="../Question2/styles.css">
+</head>
+<body>
+    <h1 style='text-align:center;'>Week 3: Assignment 2</h1>
+    <div class='container'>
+        <div class='text-editor'>
+            <h3>My Text editor</h3>
+            <label>Please enter your name:</label>
+            <form>
+                <input type="text" name="username" placeholder="John Doe" id="user" />
+                <button type="button" id="submit-btn">Submit</button>
+            </form>
+            <p id="display-username"></p>
+            <p>You've typed: <span id="word-len">0</span> <span>words</span></p>
+            <div id="result">Typed result shows here:</div>
+            <textarea id="textarea" cols="50" rows="10" placeholder="enter your text here"></textarea>
+        </div>
+        <div class='shape-container'>
+            <h3 style="text-align: center;">Shape and Background Color</h3>
+            <div id="shape" class="rect"></div>
+            <div class='wrapper'>
+                <select name="shapes" id="shapes">
+                    <option>Select Shape</option>
+                    <option value="circle">Circle</option>
+                    <option value="rectangle">Rectangle</option>
+                    <option value="square">Square</option>
+                    <option value="oval">Oval</option>
+                </select>
+                <select name="bg-colors" id="bg-colors">
+                    <option>Background-Colors</option>
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="../Question2/app.js"></script>
+</body>
+</html>
