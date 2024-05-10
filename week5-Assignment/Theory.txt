@@ -1,0 +1,64 @@
+/* Question 1 steps involved in setting up a node.js server from scratch
+/* Setting up a Node.js server from scratch involves several steps, 
+/* from installing Node.js on your machine to initializing a new project and installing necessary packages. 
+/* Below is a detailed guide to help you through the process: 
+
+/*  ******** STEPS ****** */
+
+/* 1. Install Node.js to your machine, visit the official node.js website at www.nodejs.org and download the file   */
+/* 2. Create a repository/Directory or Folder on your local machine e.g NodeJsFolder */
+/* 3. Initialize a Node.js project: Use npm to create a new package.json file for managing dependencies and scripts. using npm init -y (should be written on the terminal) */
+/* 4. Create a file on the newly created repo called server.js */
+/* 5. Download the required dependencies to start your nodejs backend, dependencies such as: */
+/* => express.js (A nodejs framework to write for building RESTApis) */
+/* => nodemon (A nodejs tool for automatically starting the nodejs server ) */
+/* 6. Setting the scripts for starting node and dev for running nodemon using the line of code: */
+/* => "scripts": { "start": "node server.js", "dev": "nodemon server.js" } */
+
+/* ****** SETTING THE SERVER.JS FILE****** */
+/* 1. require express to enable you start using express, below is how to require express: */
+
+/* ==> const express = require("express")  */
+
+/* 2. Invoke express to enable you use it's full package */
+/* ==> const app = express() */
+
+/* listen to the server using a desired port number (Port numbers should be enclosed in dotenv files) */
+/* ==> const PORT = 5000 */
+/* ==> app.listen(PORT, ()=>{ console.log("server started")}) */
+
+/* 3. Create your first endpoint */
+/*  ==> app.get("/", (req, res)=>{res.json({message: "congratulation you've successfully created your first endpoint "})}) */
+
+/* ***** QUESTION 2 ****** */
+/* what is the purpose of using a package like express in setting up a server ? */
+
+/* ****** ANSWER ****** */
+/* The purpose of using a package like Express.js when setting up a server in Node.js 
+/* is to simplify and streamline the process of building web applications and APIs. 
+/* Express.js is a web application framework for Node.js that provides a robust set of features and tools, 
+/* making it easier to handle routes, middleware, requests, and responses */
+
+/* ***** QUESTION 3 ******* */
+/* What is nodemon and how does it aid in development process? */
+
+/* ****** ANSWER ********* */
+/*  Nodemon is aN utility for Node.js applications that automatically restarts 
+/* the node process when file changes in the directory are detected. 
+/* It's particularly useful during development because it eliminates the need to 
+/* manually restart the server every time a file is modified. */
+
+/* ***** SIGNIFICANCE OF NODEMON IN A NODEJS PROJECT */
+
+/* 1. Automatic Restart: One of the most important features of nodemon is its ability to 
+/* automatically restart your Node.js application whenever changes are detected in your 
+/* project files. This eliminates the need for manual server restarts after every code modification, 
+/* saving developers time and effort. */
+
+/* 2.  Nodemon enhances the development workflow by providing a smooth and uninterrupted coding 
+/* experience. Developers can focus on writing code and testing changes without the distraction 
+/* of repeatedly stopping and restarting the server. */
+
+/* 3. Time-Saving: By eliminating the need for manual restarts, nodemon speeds up the development process. 
+/* Developers can see their code changes reflected immediately, making it easier to 
+/* debug and iterate on their applications. */
